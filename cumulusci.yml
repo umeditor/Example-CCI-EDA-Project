@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.36.0'
+project:
+    name: Example-CCI-EDA-Project
+    package:
+        name: Example-CCI-EDA-Project
+        api_version: '50.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/EDA'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Example-CCI-EDA-Project/tests
+            options:
+                outputdir: robot/Example-CCI-EDA-Project/results
+
+    robot_testdoc:
+        options:
+            path: robot/Example-CCI-EDA-Project/tests
+            output: robot/Example-CCI-EDA-Project/doc/Example-CCI-EDA-Project_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
