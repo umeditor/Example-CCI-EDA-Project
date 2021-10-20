@@ -6,7 +6,7 @@ This repo contains a cci project that's pre-configured to use EDA.
 
 To create a new EDA-based scratch org:
 
-1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
+1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/get_started.html)
 5. Run `cci flow run eda:trial_org --org dev` to deploy this project.
 3. Run `cci org browser dev` to open the org in your browser.
 
